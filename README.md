@@ -1,51 +1,32 @@
-# LeetCode Solver Pro+ 🚀
+# LeetCode AI Solver Chrome Extension
+A powerful Chrome Extension that automatically generates solutions for LeetCode problems using an AI-powered backend.
 
-An enterprise-grade LeetCode solution generator using FastAPI, Chrome Extension (MV3), and OpenRouter API.
+### This tool helps developers:
+* Instantly generate optimized solutions
+* Save time during practice
+* Understand problem-solving approaches
+* Speed up competitive programming preparation
 
-## 📁 System Architecture
-- **Backend**: FastAPI (Python) serving a `/solve` endpoint.
-- **Frontend**: Chrome Extension (JS/HTML/CSS) for scraping and injection.
-- **AI Engine**: OpenRouter (configured with Gemini 2.0 Flash).
+### Tech Stack
+* Frontend: Chrome Extension (JavaScript, HTML, CSS)
+* Backend: Python
+* API Integration: AI-based solution generator
+* Communication: REST API
 
----
+### How to Run the Project
+* 1️⃣ Clone the Repository
+git clone https://github.com/your-username/leetcode-ai-solver-extension.git
+cd leetcode-ai-solver-extension
+* 2️⃣ Install Backend Dependencies
+pip install -r backend\requirements.txt
+* 3️⃣ Start the Backend Server
+python backend\main.py
+* 4️⃣ Load Chrome Extension
 
-## 🛠️ Installation & Setup
+### Open Chrome
+* Go to chrome://extensions/
+* Enable Developer Mode
+* Click Load Unpacked
+* Select the extension folder
 
-### 1. Backend Setup (FastAPI)
-1. Navigate to the `backend/` folder.
-2. Create a `.env` file and add your OpenRouter API Key:
-   ```env
-   OPENROUTER_API_KEY=your_sk_or_key_here
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the server:
-   ```bash
-   python main.py
-   ```
-   *The server will run on `http://localhost:8000`.*
-
-### 2. Frontend Setup (Chrome Extension)
-1. Open Google Chrome and go to `chrome://extensions/`.
-2. Enable **"Developer mode"** (top right).
-3. Click **"Load unpacked"**.
-4. Select the `extension/` folder from this project.
-
----
-
-## 🚀 How to Use
-1. Ensure the Python server is running.
-2. Go to any LeetCode problem (e.g., [Two Sum](https://leetcode.com/problems/two-sum/)).
-3. Click the **LC Solver Pro** icon in your browser toolbar.
-4. Select your preferred **Programming Language**.
-5. Click **"Solve Problem"**.
-6. Wait 2-3 seconds, and watch the solution appear in your editor!
-
----
-
-## 🔧 Troubleshooting
-- **Injection failed**: Click once inside the LeetCode code editor before clicking Solve. This ensures the extension can find the active cursor.
-- **Server Error**: Check your terminal running `main.py` for specific API error messages.
-- **Model blocked**: OpenRouter might block certain prompts; check your account balance and API key permissions.
+Now open any LeetCode problem and generate solutions instantly.
