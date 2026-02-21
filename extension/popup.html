@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>LC Solver Pro</h1>
+            <div class="badge">AI Powered</div>
+        </header>
+
+        <main>
+            <div class="form-group">
+                <label>Programming Language</label>
+                <select id="language">
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="typescript">TypeScript</option>
+                </select>
+            </div>
+
+            <button id="solveBtn">
+                <span class="btn-text">Generate Solution</span>
+                <div class="loader" id="loader"></div>
+            </button>
+
+            <div id="resultArea" style="display: none; margin-top: 15px;">
+                <label>Generated Solution</label>
+                <div class="code-container">
+                    <pre><code id="generatedCode"></code></pre>
+                    <button id="copyBtn" class="secondary-btn">Copy Code</button>
+                    <button id="injectBtn" class="secondary-btn">Try Auto-Inject</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="status">Ready to solve</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
