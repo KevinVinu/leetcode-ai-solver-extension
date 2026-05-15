@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from routes import solve
 import uvicorn
-
+#new branch
 app = FastAPI(title="LeetCode Solver API", version="1.0.0")
 
 # Enable CORS for the Chrome Extension
